@@ -170,7 +170,7 @@ p {
   z-index: 5;
   transition: all .4s ease-in-out;
   border: none;
-  background: #4E6EF1;
+  background:rgb(103, 126, 177);
   overflow: hidden;
 }
 
