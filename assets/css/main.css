@@ -1776,3 +1776,176 @@ p {
 .pb-225 {
   padding-bottom: 225px;
 }
+/* =========================
+   BALANCED PROFESSIONAL SCALE
+========================= */
+
+html {
+    font-size: 15.5px; /* subtle reduction from 16px */
+}
+
+body {
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.65;
+    color: #444;
+}
+
+/* =========================
+   HEADINGS (balanced)
+========================= */
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.25;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* Section descriptions */
+.section-title p {
+    font-size: 0.98rem;
+    max-width: 680px;
+    margin-inline: auto;
+}
+
+/* =========================
+   NAVBAR (clean & readable)
+========================= */
+
+.navbar-brand img {
+    height: 42px;
+}
+
+.navbar-nav .nav-item a {
+    font-size: 0.95rem;
+    padding: 0.45rem 0.8rem;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.main-btn {
+    font-size: 0.9rem;
+    padding: 11px 26px;
+    border-radius: 7px;
+    letter-spacing: 0.4px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section h1 {
+    font-size: 2.6rem;
+}
+
+.hero-section p {
+    font-size: 1rem;
+    max-width: 520px;
+}
+
+/* =========================
+   SERVICE CARDS
+========================= */
+
+.single-service {
+    padding: 28px 22px;
+}
+
+.single-service h3 {
+    font-size: 1.2rem;
+}
+
+.single-service p {
+    font-size: 0.95rem;
+}
+
+/* =========================
+   TEAM SECTION (IMPORTANT)
+========================= */
+
+.team-card .card-body {
+    padding: 1.6rem;
+}
+
+.team-img {
+    width: 105px;
+    height: 105px;
+}
+
+.team-card h5 {
+    font-size: 1.05rem;
+}
+
+.team-card span {
+    font-size: 0.85rem;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+}
+
+/* Social icons */
+.team-card i {
+    font-size: 1rem;
+}
+
+/* =========================
+   COUNTER SECTION
+========================= */
+
+.single-counter h1 {
+    font-size: 1.75rem;
+}
+
+.single-counter span {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-widget h3 {
+    font-size: 1.15rem;
+}
+
+.footer-widget p,
+.footer-widget li {
+    font-size: 0.9rem;
+}
+
+/* =========================
+   SPACING (very light reduction)
+========================= */
+
+.pt-150 {
+    padding-top: 135px !important;
+}
+
+.pb-100 {
+    padding-bottom: 90px !important;
+}
+
+.mt-150 {
+    margin-top: 135px !important;
+}
