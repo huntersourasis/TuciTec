@@ -81,9 +81,9 @@ h4,
 h5,
 h6 {
   font-family: "Archivo Black", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0px;
-  color: #313450;
+  color: rgb(83, 87, 87);
 }
 
 .section-title p {
@@ -98,30 +98,6 @@ h4 a,
 h5 a,
 h6 a {
   color: inherit;
-}
-
-h1 {
-  font-size: 35px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-h4 {
-  font-size: 20px;
-}
-
-h5 {
-  font-size: 18px;
-}
-
-h6 {
-  font-size: 16px;
 }
 
 ul,
@@ -175,6 +151,7 @@ p {
 }
 
 .main-btn:hover {
+  transform: translateY(-5px);
   color: #fff;
 }
 
@@ -514,7 +491,6 @@ p {
 }
 
 .navbar-nav .nav-item a {
-  font-size: 18px;
   font-weight: 400;
   color: #6B6F92;
   transition: all 0.3s ease-out 0s;
@@ -809,12 +785,11 @@ p {
 }
 
 .client-logo-section .single-logo {
-  /* opacity: .43; */
   transition: all 0.3s ease-out 0s;
 }
 
 .client-logo-section .single-logo:hover {
-  opacity: 1;
+  transform: translateY(-15px);
 }
 
 .client-logo-section .single-logo img {
@@ -1835,7 +1810,7 @@ p {
 }
 
 .navbar-nav .nav-item a {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     padding: 0.45rem 0.8rem;
 }
 
@@ -1885,6 +1860,12 @@ p {
 
 .team-card .card-body {
     padding: 1.6rem;
+}
+.team-card {
+  transition: all 0.2s ease-out 0s ;
+}
+.team-card:hover {
+  transform: translateY(-10px);
 }
 
 .team-img {
@@ -1948,4 +1929,83 @@ p {
 
 .mt-150 {
     margin-top: 135px !important;
+}
+/* =========================
+   Portfolio Section
+========================= */
+
+.portfolio-filter button {
+  border: none;
+  background: #fff;
+  padding: 10px 22px;
+  margin: 5px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio-filter button.active,
+.portfolio-filter button:hover {
+  background: #4a6cf7;
+  color: #fff;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.portfolio-card img {
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio-overlay h5 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.portfolio-overlay span {
+  color: #ddd;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.portfolio-btn {
+  background: #4a6cf7;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 25px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.portfolio-btn:hover {
+  background: #3249c3;
+  color: #fff;
 }

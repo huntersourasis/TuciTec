@@ -137,3 +137,27 @@ document.querySelector('.scroll-top').onclick = function () {
 	scrollTo(document.documentElement); 
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".portfolio-filter button");
+  const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+  filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+
+      // Active button styling
+      filterButtons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      const filterValue = button.getAttribute("data-filter");
+
+      portfolioItems.forEach(item => {
+        if (filterValue === "*" || item.classList.contains(filterValue.substring(1))) {
+          item.style.display = "block";
+          item.style.animation = "fadeIn 0.4s ease";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  });
+});
